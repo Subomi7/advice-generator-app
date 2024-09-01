@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+  --ff-manrope: 'Manrope', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background-color: var(--dark-blue);
+  font-family: var(--ff-manrope);
+}
+
+.card-section {
+  /* position: relative; */
+  max-width: 400px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background: var(--dark-grayish-blue);
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px #000;
+}
+
+.first-image,
+.second-image {
+  width: 100%;
+  border-radius: inherit;
+}
+
+h5 {
+  color: var(--neon-green);
+  font-size: 20px;
+}
+
+p {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--light-cyan);
+  padding: 2rem 0;
+}
+
+.first-image {
+  display: block;
+}
+
+.second-image {
+  display: none;
+}
+
+.button {
+  background: var(--neon-green);
+  border: none;
+  border-radius: 2rem;
+  position: relative;
+  top: 4rem;
+}
+
+.button img {
+  padding: 0.9rem;
+}
+
+@media (max-width: 375px) {
+  .second-image {
+    display: block;
+  }
+  .first-image {
+    display: none;
+  }
+
+  body {
+    width: 90%;
+  }
+}
+
+/* .content{
+  padding-left: 2rem;
+  padding-rig: 2rem;
+} */
+/* .section-1 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+} */
+
+/*  */
