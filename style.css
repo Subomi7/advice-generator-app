@@ -77,6 +77,11 @@ p {
   padding: 0.9rem;
 }
 
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 18px 8px var(--neon-green);
+}
+
 @media (max-width: 375px) {
   .second-image {
     display: block;
